@@ -22,13 +22,13 @@ def plot(grid_utilities_per_iteration, algoname: str):
     plt.ylabel('Utility')
 
 
-    plt.savefig(os.getcwd() + '/results/' + algoname + ' results graph.png')
+    #plt.savefig(os.getcwd() + '/results/' + algoname + ' results graph.png')
     plt.show()
     return
 
 
 #tester
-"""
-a = {(0,0):[1,2,3], (1,0):[2,3,4]}
+'''
+a = {(0,0):[0,2,3], (1,0):[0,3,4]}
 plot(a, 'Value Iteration')
-"""
+'''
