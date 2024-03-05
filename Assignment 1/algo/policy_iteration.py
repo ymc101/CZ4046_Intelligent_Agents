@@ -32,7 +32,7 @@ def policy_iteration(reward, maze_length: int, discount_factor: float):
     policy_unchanged_count = 0 #number of iterations where policy remains unchanged, to be used as convergence condition
     iteration_count = 1
 
-    while policy_unchanged_count<5:
+    while policy_unchanged_count<20:
         #perform actions in new_policy and update utilities for each state
         for i in range(maze_length):
             for j in range(maze_length):
