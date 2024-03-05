@@ -21,14 +21,7 @@ def plot(grid_utilities_per_iteration, algoname: str):
     plt.xlabel('Iteration Count')
     plt.ylabel('Utility')
 
-
-    #plt.savefig(os.getcwd() + '/results/' + algoname + ' results graph.png')
-    plt.show()
+    algoname.replace(" ", "_")
+    plt.savefig(os.getcwd() + '/results/' + algoname + '_utility_graph.png')
+    #plt.show()
     return
-
-
-#tester
-'''
-a = {(0,0):[0,2,3], (1,0):[0,3,4]}
-plot(a, 'Value Iteration')
-'''

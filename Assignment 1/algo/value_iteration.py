@@ -7,6 +7,7 @@ def value_iteration(reward, maze_length: int, discount_factor: float):
     input parameters:
         reward(2D list containing the reward at each grid)
         maze_length: length of x by x grid maze
+        discount_factor: float indicating the discount factor gamma
     '''
 
     #initialize maze_length by maze_length 2D arrays to store new utilities and current utilities of states
