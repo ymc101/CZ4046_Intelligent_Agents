@@ -8,7 +8,7 @@ def plot(grid_utilities_per_iteration, algoname: str):
     grid_utilities_per_iteration: {(x,y) : utility, ...}
     where (x,y) is the coordinate of a grid in the maze
     """
-    #plt.figure(figsize = (16, 8))
+    plt.figure(figsize = (16, 8))
 
     num_of_iterations = len(grid_utilities_per_iteration[0,0])
     x_values = list(range(1, num_of_iterations+1))
