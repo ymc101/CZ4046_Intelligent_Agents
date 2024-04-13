@@ -15,9 +15,10 @@ public class MingChuen_Yap_Player { // extends Player
                 defectioncount++;
         }
 
-        if(defectioncount == 3)
-            return 1; //defect if there has been a defector in the last consecutive 3 rounds
-
+        if(defectioncount == 3){
+            if(Math.random() < 0.8)
+                return 1; //defect if there has been a defector in the last consecutive 3 rounds with 0.8 chance
+        }
         return 0;
     }
 }
